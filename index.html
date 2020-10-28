@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/8619792f44.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="script.js" defer></script>
+		<title>Conecta 4</title>
+	</head>
+	<body>
+		<header id="fixHeader">
+			<h1 class="lttrspcng txtcntr">CONNECT 4 SKYLABCODER</h1>
+		</header>
+		<section id="displayGameSetup">
+			<div id="setGameSetupGrid">
+				<h2 class="txtcntr lttrspcng">Game Setup</h2>
+				<label for="playerOne" class="txtcntr">First Player Name</label>
+				<input
+					type="text"
+					name="playerOne"
+					id="playerOne"
+					placeholder="Player Name"
+					class="defaultBorder"
+					autofocus
+					title="Completa ambos campos para poder jugar"
+					maxlength="10"
+				/>
+				<label for="playerTwo" class="txtcntr">Second Player Name</label>
+				<input
+					type="text"
+					name="playerTwo"
+					id="playerTwo"
+					placeholder="Player Name"
+					class="defaultBorder"
+					title="Completa ambos campos para poder jugar"
+					maxlength="10"
+				/>
+				<button id="startGame" class="defaultBorder" disabled>
+					Start Game
+				</button>
+			</div>
+		</section>
+		<section id="displayPlayingGame">
+			<div id="setPlayingGameGrid">
+				<span data-curr-player></span>
+				<div><em class="fas fa-arrow-left"></em></div>
+				<div id="pressToStart"></div>
+				<div><em class="fas fa-arrow-right"></em></div>
+				<span data-curr-player></span>
+				<table aria-describedby="Game Table">
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+					<tr data-row>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+						<td data-sloth></td>
+					</tr>
+				</table>
+				<button id="exit" class="defaultBorder">Exit</button>
+				<div id="winner"></div>
+				<button id="reset" class="defaultBorder">Reset</button>
+			</div>
+		</section>
+	</body>
+</html>
